@@ -27,8 +27,24 @@ console.log("loops");
 //     i++
 // }
 
-let i=10;
-do {
-    console.log(i)
-    i++
-} while (i<6);
+// let i=10;
+// do {
+//     console.log(i)
+//     i++
+// } while (i<6);
+
+let a=[1,88,33,79,25]
+
+// for (let index = 0; index < a.length; index++) {
+//     const element = a[index];
+//     console.log(element)
+// }
+
+
+// a.forEach((value,index,arr)=>{
+//     console.log(value,index,arr)
+// })
+
+for (const value of a) {
+    console.log(value)
+}
