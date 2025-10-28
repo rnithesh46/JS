@@ -1,10 +1,12 @@
 console.log("loops");
 // let a=0;
 
+// for loop
 // for (let i = 0; i < 10; i++) {
 //     console.log(a+i)
 // }
 
+// for in loop
 // let obj={
 //     name:"harry",
 //     role:"programmer",
@@ -16,10 +18,12 @@ console.log("loops");
     
 // }
 
+// for off loop
 // for (const c of "harry") {
 //     console.log(c)
 // }
 
+// while loop
 // let i=0;
 
 // while (i<6) {
@@ -27,6 +31,7 @@ console.log("loops");
 //     i++
 // }
 
+// do while loop
 // let i=10;
 // do {
 //     console.log(i)
