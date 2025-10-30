@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- document.body
+<body>​<div class=​"container">​
+    <div class=​"box" style=​"color:​ red;​">​Box 1​</div>
+    ​<div class=​"box">​Box 2​</div>
+    ​<div class=​"box">​Box 3​</div>
+    ​<div class=​"box">​Box 4​</div>
+    ​<div class=​"box" style=​"background-color:​ red;​">​Box 5​</div>
+    ​</div>
+​</body>
+
+​
+document.body.childNodes
+NodeList(3) [text, div.container, text]
+
+
+document.body.childNodes[0]
+#text
+
+
+let cont=document.body.childNodes[1]
+undefined
+
+cont
+<div class=​"container">​…​</div>
+​<div class=​"box" style=​"color:​ red;​">​Box 1​</div>
+​<div class=​"box">​Box 2​</div>
+​<div class=​"box">​Box 3​</div>
+​<div class=​"box">​Box 4​</div>
+​<div class=​"box" style=​"background-color:​ red;​">​Box 5​</div>
+​</div>​
+
+
+cont.firstChild
+#text
+cont.lastChild
+#text
+
+
+cont.firstElementChild
+<div class=​"box">​Box 1​</div>​
+
+cont.firstElementChild.style.color="red"
+'red'
+
+cont.lastElementChild.style.backgroundColor="red"
+'red'
+
+cont.lastElementChild.parentElement
+<div class=​"container">​…​</div>​
+
+
+document.body.firstElementChild.childNodes
+NodeList(11) [text, div.box, text, div.box, text, div.box, text, div.box, text, div.box, text]
+
+document.body.firstElementChild.children
+HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]
+
+document.body.firstElementChild.children[1]
+<div class=​"box">​Box 2​</div>​
+
+document.body.firstElementChild.children[1].nextElementSibling
+<div class=​"box">​Box 3​</div>​
+
+document.body.firstElementChild.children[1].previousElementSibling
+<div class=​"box" style=​"color:​ red;​">​Box 1​</div>​ -->
