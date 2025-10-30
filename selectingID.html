@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 2.5</div>
+        <div id="redbox" class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+
+    <script>
+        console.log("selecting id,classes and more")
+
+        let boxes = document.getElementsByClassName("box")
+        console.log(boxes)
+
+        // boxes[2].style.backgroundColor="red"
+
+        document.getElementById("redbox").style.backgroundColor = "red"
+
+        document.querySelector(".box").style.backgroundColor = "green"
+        // for first box class
+
+        // document.querySelectorAll(".box")
+        // gives all the box classes,you cannot style any array,so we have to use foreach loop for this
+        document.querySelectorAll(".box").forEach(e => {
+            // console.log(e)
+            e.style.color = "blue"
+        })
+
+        console.log(document.getElementsByTagName("div"))
+        //    returns every div elements
+
+        // let e=document.getElementsByTagName("div")
+        // e[4].matches("#redbox")
+        // true
+        // to check the element matches the css selector
+
+        // to check the nearest ancestor,itself is also included
+        //     e[3].closest(".container")
+        //      <div class=​"container">​…​</div>​
+        //      e[3].closest("html")
+        //      <html lang=​"en">​<head>​…​</head>​<body>​…​</body>​</html>​
+
+        // checks if it contains the element or not
+        //      document.querySelector(".container").contains(e[2])
+        //      true
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- selecting id,classes and more
+selectingID.html:29 HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]
+
+document.body.getElementsByClassName("box")
+HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]
+
+let cont=document.body.getElementsByClassName("box")
+undefined
+
+cont
+HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]
+
+cont[2].style.backgroundcolor="red"
+'red'
+cont[2]
+
+<div class=​"box">​Box​</div>​
+cont[2].style.backgroundColor="red"
+'red' -->
