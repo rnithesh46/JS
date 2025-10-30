@@ -8,5 +8,15 @@ function factorial(number){
     })
     console.log(c)
 }
-factorial(a)
-factorial(4)
+
+
+function facfor(number){
+    let fac=1;
+    for (let index=1; index<=number; index++){
+        fac =fac * index
+    }
+    return fac
+}
+
+console.log(factorial(a))
+console.log(facfor(a))
