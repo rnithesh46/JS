@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container red">
         <div class="box"  style="display: flex;"
         data-createdby="harry">Hey i am a box</div>
     </div>
@@ -78,3 +83,13 @@ false -->
 DOMStringMap {createdby: 'harry'} -->
 
 <!-- document.querySelector(".box").remove() -->
+
+<!-- document.querySelector(".container").classList
+DOMTokenList ['container', value: 'container']0: "container"length: 1value: "container"[[Prototype]]: DOMTokenList
+
+document.querySelector(".container").className
+'container' -->
+
+<!-- document.querySelector(".container").classList.add("harry") -->
+
+<!-- document.querySelector(".container").classList.toggle("red") -->
