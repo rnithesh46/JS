@@ -7,8 +7,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="box">Hey i am a box</div>
+        <div class="box"  style="display: flex;"
+        data-createdby="harry">Hey i am a box</div>
     </div>
+
+    <script>
+        // let div=document.createElement("div");
+        // div.innerHTML="hey this is <b>html</b>"
+        // div.setAttribute("class","created");
+        // document.querySelector(".container").append(div);
+
+        let cont =document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend","hellooooooooo <b> nice to meet youuuuuuuu  </b>")
+    </script>
 </body>
 </html>
 
@@ -38,3 +49,32 @@ document.querySelector(".container").nodeName
 
 document.querySelector(".container").textContent
 '\n        Hey i am a box\n    ' -->
+
+<!-- document.querySelector(".box").innerHTML="hey i am harry"
+'hey i am harry'
+
+document.querySelector(".box").hasAttribute("style")
+false
+
+document.querySelector(".box").setAttribute("style","display:inline")
+undefined
+
+document.querySelector(".box").hasAttribute("style")
+true
+
+document.querySelector(".box").attributes
+NamedNodeMap {0: class, 1: style, class: class, style: style, length: 2}
+
+document.querySelector(".box").removeAttribute("style")
+undefined
+
+document.querySelector(".box").hasAttribute("style")
+false -->
+
+<!-- document.designMode="on" 
+ allows to you edit webpages-->
+
+ <!-- document.querySelector(".box").dataset
+DOMStringMap {createdby: 'harry'} -->
+
+<!-- document.querySelector(".box").remove() -->
