@@ -20,4 +20,4 @@ else {
     b = obj[b]
     alert(`the result is ${eval(`${ a } ${ b } ${ c }`)}`)
 }
-// abcdefg
+// abcdefgkejfjwe
