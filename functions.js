@@ -34,4 +34,4 @@ const func1 = (x)=>{
 func1(34);
 func1(64);
 func1(84);
-// hehehehehe
+// hehehehehehehehe
