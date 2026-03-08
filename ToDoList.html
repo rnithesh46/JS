@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>To-Do-List</title>
+</head>
+<body>
+    <p>To Do List</p>
+
+    <input placeholder="Todo name" class="js-name-input" onkeydown="handlekd(event);">
+    
+    <button onclick="
+        addTodo();
+    " >Add</button>
+
+    <div class="js-todo-list"></div>
+
+    <script>
+        const TodoList=[];
+        
+        function handlekd(){
+            if(event.key==='Enter'){
+                addTodo();
+            }
+        }
+        renderTodoList();
+
+        function renderTodoList(){
+            let TodoListHTML='';
+            for(let i=0;i<TodoList.length;i++){
+                const todo=TodoList[i];
+                const html=`<p>${todo}</p>`;
+                TodoListHTML+=html;
+            }
+            document.querySelector('.js-todo-list').innerHTML=TodoListHTML;
+        }
+        
+        function addTodo(){
+            const inputElement=document.querySelector('.js-name-input')
+            const name=inputElement.value;
+            TodoList.push(name);
+            console.log(TodoList);
+            inputElement.value='';
+            renderTodoList();
+        }
+    </script>
+</body>
+</html>
