@@ -67,6 +67,20 @@
 
         function renderTodoList() {
             let TodoListHTML = '';
+
+            TodoList.forEach(function(todoObject,index){
+                const { name,dueDate }=todoObject;
+                const html = `
+                <div>${name}</div>
+                <div>${dueDate}</div>
+                <button onclick="
+                    TodoList.splice(${index},1);
+                    renderTodoList();
+                " class="delete-todo-button">Delete</button>
+                `;
+                TodoListHTML += html;
+            });
+            /*
             for (let i = 0; i < TodoList.length; i++) {
                 const todoObject = TodoList[i];
                 // const name=todoObject.name;
@@ -82,6 +96,7 @@
                 `;
                 TodoListHTML += html;
             }
+            */
             document.querySelector('.js-todo-list').innerHTML = TodoListHTML;
         }
 
